@@ -27,12 +27,6 @@ Restart And Storage Functions
 
 ## Installing The Library
 
-Using React Native version below 0.40? use version 0.0.1. Otherwise, use version 0.0.2.
-
-### RN < 0.40
-
-`npm install react-native-restart-storage@0.0.1 --save`
-
 ### RN >= 0.40
 
 `npm install react-native-restart-storage --save`
