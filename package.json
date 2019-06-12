@@ -1,0 +1,32 @@
+{
+  "name": "react-native-restart-storage",
+  "version": "1.0.0",
+  "description": "React Native Restart Component and Native Storage Function",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js",
+    "ios",
+    "android/src",
+    "android/build.gradle",
+    "windows"
+  ],
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "restart"
+  ],
+  "bugs": {
+    "url": "https://github.com/850176300/react-native-restart-storage/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/850176300/react-native-restart-storage.git"
+  },
+  "author": "Avishay Bar <http://www.geektime.co.il>",
+  "license": "MIT"
+}
