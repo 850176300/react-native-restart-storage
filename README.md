@@ -1,6 +1,6 @@
-# React Native Restart
+# React Native Restart And Storage Functions 
 
-Restart Your React Native Project
+Restart And Storage Functions 
 
 [![npm version](https://img.shields.io/npm/v/react-native-restart.svg?style=flat-square)](https://www.npmjs.com/package/react-native-restart)
 [![npm downloads](https://img.shields.io/npm/dm/react-native-restart.svg?style=flat-square)](https://www.npmjs.com/package/react-native-restart)
@@ -8,7 +8,7 @@ Restart Your React Native Project
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [React Native Restart](#react-native-restart)
+- [React Native Restart](#react-native-restart-storage)
 	- [Installing The Library](#installing-the-library)
 		- [RN < 0.40](#rn-040)
 		- [RN >= 0.40](#rn-040)
@@ -31,15 +31,15 @@ Using React Native version below 0.40? use version 0.0.1. Otherwise, use version
 
 ### RN < 0.40
 
-`npm install react-native-restart@0.0.1 --save`
+`npm install react-native-restart-storage@0.0.1 --save`
 
 ### RN >= 0.40
 
-`npm install react-native-restart --save`
+`npm install react-native-restart-storage --save`
 
 ## Automatic Installation
 
-`react-native link react-native-restart` or `npm install -g rnpm && rnpm link react-native-restart`
+`react-native link react-native-restart-storage` or `npm install -g rnpm && rnpm link react-native-restart-storage`
 
 ## Manual Android Installation
 
@@ -47,8 +47,8 @@ In `android/settings.gradle`
 ```gradle
 ...
 
-include ':react-native-restart'
-project(':react-native-restart').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-restart/android')
+include ':react-native-restart-storage'
+project(':react-native-restart-storage').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-restart-storage/android')
 ```
 
 In `android/app/build.gradle`
@@ -59,7 +59,7 @@ In `android/app/build.gradle`
 dependencies {
     ...
 
-    compile project(':react-native-restart')
+    compile project(':react-native-restart-storage')
 }
 ```
 
@@ -128,7 +128,7 @@ public class MainApplication extends Application implements ReactApplication {
 
 ### Importing The Library
 
- * Drag the file `RCTRestart.xcodeproj` from `/node_modules/react-native-restart/ios` into the `Libraries` group in the Project navigator. Ensure that `Copy items if needed` is UNCHECKED!
+ * Drag the file `RCTRestart.xcodeproj` from `/node_modules/react-native-restart-storage/ios` into the `Libraries` group in the Project navigator. Ensure that `Copy items if needed` is UNCHECKED!
 
   ![Add Files To...](http://i.imgur.com/puxHiIg.png)
 
@@ -161,7 +161,7 @@ target 'MyReactApp' do
 
   # The following line uses RCTRestart, linking with
   # the library and setting the Header Search Paths for you
-  pod 'RCTRestart', :path => '../node_modules/react-native-restart/ios'
+  pod 'RCTRestart', :path => '../node_modules/react-native-restart-storage/ios'
 end
 ```
 
@@ -171,7 +171,7 @@ Remember to run `cd ios && pod install` to update files used by Xcode.
 ## Usage
 
 ```javascript
-import RNRestart from 'react-native-restart'; // Import package from node modules
+import RNRestart from 'react-native-restart-storage'; // Import package from node modules
 
 // Immediately reload the React Native Bundle
 RNRestart.Restart();
